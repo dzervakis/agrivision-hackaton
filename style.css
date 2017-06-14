@@ -1,0 +1,27 @@
+body {
+  font-size: 12px;
+}
+.supply-chain .option {
+  border: solid 1px #AAA;
+  border-radius: 2px;
+  padding: 0px;
+}
+.supply-chain .option-wrapper {
+  padding: 0px 5px;
+}
+.supply-chain .option .title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  line-height: 3em;
+}
+.supply-chain .option .stats {
+  background-color: #DDD;
+  height: 4em;
+  text-align: center;
+}
+.supply-chain .option .rating {
+  text-align: right;
+  margin: 1em 0;
+  color: #F70;
+}
