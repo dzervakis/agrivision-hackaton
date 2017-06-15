@@ -25,3 +25,8 @@ body {
   margin: 1em 0;
   color: #F70;
 }
+
+.tabled {
+  border: 1px solid black;
+  border-collapse: collapse;
+}

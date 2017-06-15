@@ -99,9 +99,30 @@ var App = function () {
       time: 15,
       rating: 3
     }
-  }
-  console.log(cardFunctions.generateCard(data.properties));
-  
+  };
+
+    $.getJSON('mockupData.geojson', function (data) {
+        var items = [];
+        $.each(data.features, function (key, val) {
+            items.push('<tr>');
+            $.each(val.properties, function(i,j){
+                if (typeof j === 'undefined') {
+                    j = 'NULL';
+                }
+                items.push('<td id="' + i + '">' + j + '</td>');
+            });
+            items.push('</tr>');
+        });
+        $('<table/>', {
+            class:'tabled',
+            border: '1',
+            html:items.join('')
+        }).appendTo('body');
+    });
+
+  //console.log(cardFunctions.generateCard(data.properties));
+
+
 };
 
 window.onload = init;
