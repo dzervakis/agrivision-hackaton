@@ -101,7 +101,7 @@ var App = function () {
     }
   };
 
-    $.getJSON('mockupData.geojson', function (data) {
+    $.getJSON('mockupDataWithNullFilled.geojson', function (data) {
         var items = [];
         $.each(data.features, function (key, val) {
             items.push('<tr>');
